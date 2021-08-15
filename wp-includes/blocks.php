@@ -810,6 +810,9 @@ function _excerpt_render_inner_blocks( $parsed_block, $allowed_blocks ) {
 function render_block( $parsed_block ) {
 	global $post;
 
+
+	var_dump($parsed_block);
+
 	/**
 	 * Allows render_block() to be short-circuited, by returning a non-null value.
 	 *
@@ -896,7 +899,7 @@ function parse_blocks( $content ) {
  */
 function do_blocks( $content ) {
 
-	var_dump($content);
+	
 	$blocks = parse_blocks( $content );
 	$output = '';
 
