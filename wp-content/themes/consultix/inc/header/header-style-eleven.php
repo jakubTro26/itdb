@@ -149,7 +149,7 @@
 			<!-- header_main -->
 			<div class="header_main">
 				<!-- brand-logo -->
-				<div class="brand-logo radiantthemes-retina">
+				<div class="brand-logo radiantthemes-retina b">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( consultix_global_var( 'header_eleven_logo', 'url', true ) ); ?>" alt="<?php esc_html_e( 'header_eleven_logo', 'consultix' ); ?>"></a>
 				</div>
 				<!-- brand-logo -->
