@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area  r">
 	<main id="main" <?php post_class( 'site-main' ); ?> >
 	<?php if ( ( consultix_global_var( 'blog-style', '', false ) ) ) : ?>
 		<?php include get_parent_theme_file_path( '/inc/blog/blog-' . consultix_global_var( 'blog-style', '', false ) . '.php' ); ?>
