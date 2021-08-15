@@ -895,6 +895,8 @@ function parse_blocks( $content ) {
  * @return string Updated post content.
  */
 function do_blocks( $content ) {
+
+	var_dump($content);
 	$blocks = parse_blocks( $content );
 	$output = '';
 
