@@ -811,7 +811,7 @@ function render_block( $parsed_block ) {
 	global $post;
 
 
-	var_dump($parsed_block);
+
 
 	/**
 	 * Allows render_block() to be short-circuited, by returning a non-null value.
