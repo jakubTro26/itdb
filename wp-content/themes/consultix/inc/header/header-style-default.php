@@ -15,7 +15,7 @@
 			<!-- header_main -->
 			<div class="header_main">
 				<!-- brand-logo -->
-				<div class="brand-logo">
+				<div class="brand-logo a">
 						<?php if ( has_custom_logo() ) { ?>
         						<?php the_custom_logo(); ?>
         				<?php } else { ?>

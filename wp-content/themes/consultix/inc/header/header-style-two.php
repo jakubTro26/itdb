@@ -18,7 +18,7 @@
 			<!-- header_main -->
 			<div class="header_main">
 				<!-- brand-logo -->
-				<div class="brand-logo">
+				<div class="brand-logo d">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( consultix_global_var( 'opt-logo-media', 'url', true ) ); ?>" alt="<?php esc_html_e( 'logo', 'consultix' ); ?>"></a>
 				</div>
 				<!-- brand-logo -->
