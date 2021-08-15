@@ -260,7 +260,7 @@ class WP_Block {
 		 */
 		$block_content = apply_filters( "render_block_{$this->name}", $block_content, $this->parsed_block );
 
-		var_dump($block_content);
+		
 
 
 		return $block_content;
