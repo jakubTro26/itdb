@@ -43,7 +43,7 @@ get_header(); ?>
         </main><!-- #main -->
     </div><!-- #primary -->
 <?php } else { ?>
-    <div id="primary" class="content-area">
+    <div id="primary" class="content-area q">
     	<main id="main" class="site-main">
     		<?php if ( get_post() && ! preg_match( '/vc_row/', get_post()->post_content ) ) : ?>
     			<div class="wraper_blog_main default-page">
