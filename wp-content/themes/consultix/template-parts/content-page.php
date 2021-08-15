@@ -19,7 +19,7 @@
         </header><!-- .entry-header -->
     <?php endif; ?>
 	</header><!-- .entry-header -->
-	<div class="entry-content">
+	<div class="entry-content r">
 		<?php
 			the_content();
 
