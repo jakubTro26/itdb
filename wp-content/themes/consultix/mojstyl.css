@@ -2,3 +2,9 @@
 
     width:99% !important;
 }
+
+.rt-case-study-box.element-four .rt-case-study-box-item > .holder > .pic > .holder{
+
+
+    background-size: contain !important;
+}
