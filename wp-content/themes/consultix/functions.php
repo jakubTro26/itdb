@@ -1234,11 +1234,8 @@ if ( is_admin() ) {
 function wpse_89494_enqueue_scripts() {
 
 
-	  wp_enqueue_style( 
-		'wpse_89494_style_1', 
-		get_template_directory_uri() . '/mojstyl.css' 
-	  );
-	
+	 
+	  wp_enqueue_style( 'wpse_89494_style_1', get_template_directory_uri() . '/mojstyl.css' ,array(),rand( 100, 999 ) );
 
   }
   
