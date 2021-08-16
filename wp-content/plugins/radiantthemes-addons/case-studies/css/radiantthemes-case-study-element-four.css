@@ -76,7 +76,7 @@
 
 	background-repeat:no-repeat;
 
-	background-size:cover;
+	background-size:contain;
 
 	transition:all 0.5s ease-in-out;
 
@@ -364,6 +364,3 @@
 
 }
 
-.pic img{
-	width:99%;
-}
