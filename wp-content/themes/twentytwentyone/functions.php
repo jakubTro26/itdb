@@ -393,6 +393,14 @@ add_action( 'after_setup_theme', 'twenty_twenty_one_content_width', 0 );
  *
  * @return void
  */
+
+
+
+
+
+
+
+ 
 function twenty_twenty_one_scripts() {
 	// Note, the is_IE global variable is defined by WordPress and is used
 	// to detect if the current browser is internet explorer.
@@ -464,6 +472,7 @@ function twenty_twenty_one_scripts() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'twenty_twenty_one_scripts' );
+add_action( 'wp_enqueue_scripts', 'additional_styles' );
 
 /**
  * Enqueue block editor script.

@@ -489,6 +489,11 @@ function consultix_scripts() {
 	// ENQUEUE STYLE.CSS.
 	wp_enqueue_style( 'radiantthemes-style', get_stylesheet_uri() );
 
+
+
+
+
+
 	include_once ABSPATH . 'wp-admin/includes/plugin.php';
 	if ( class_exists( 'ReduxFrameworkPlugin' ) && class_exists( 'Radiantthemes_Addons' ) ) {
 
@@ -1224,3 +1229,17 @@ add_filter( 'fw:ext:backups-demo:demos', 'radiantthemes_fw_ext_backups_demos' );
 if ( is_admin() ) {
 	include_once get_template_directory() . '/inc/radiantthemes-dashboard/rt-admin.php';
 }
+
+
+function wpse_89494_enqueue_scripts() {
+
+
+	  wp_enqueue_style( 
+		'wpse_89494_style_1', 
+		get_template_directory_uri() . '/mojstyl.css' 
+	  );
+	
+
+  }
+  
+  add_action( 'wp_enqueue_scripts', 'wpse_89494_enqueue_scripts' );
