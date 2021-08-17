@@ -97,7 +97,7 @@ if ( $my_query->have_posts() ) {
 		    $output .= '<p>' . wp_trim_words( get_the_excerpt(), 10, '...' ) . '</p>';
 		}
 		if ( true == $shortcode['case_study_enable_link_button'] && ! empty( $shortcode['case_study_link_button_text'] ) ) {
-				var_dump($terms[0]);
+				var_dump($terms[0]->term_id);
 		    $output .= '<a class="btn a" href="' . get_the_permalink() . '">' . esc_html( $shortcode['case_study_link_button_text'] ) . '<i class="fa fa-angle-right"></i></a>';
 		}
 		$output .= '</div>';
