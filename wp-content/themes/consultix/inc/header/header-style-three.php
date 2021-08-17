@@ -9,7 +9,7 @@
 <!-- wraper_header -->
 <header class="wraper_header style-three">
 	<!-- wraper_header_main -->
-	<div class="wraper_header_main">
+	<div class="wraper_header_main f">
 		<div class="container">
 			<!-- header_main -->
 			<div class="header_main">
