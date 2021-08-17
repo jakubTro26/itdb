@@ -301,7 +301,7 @@ function get_permalink( $post = 0, $leavename = false ) {
 	 * @param WP_Post $post      The post in question.
 	 * @param bool    $leavename Whether to keep the post name.
 	 */
-
+		echo 'link';
 	 var_dump($permalink);
 	return apply_filters( 'post_link', $permalink, $post, $leavename );
 }
