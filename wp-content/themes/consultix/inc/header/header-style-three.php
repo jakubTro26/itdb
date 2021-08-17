@@ -9,22 +9,7 @@
 <!-- wraper_header -->
 <header class="wraper_header style-three">
 	<!-- wraper_header_main -->
-	<div class="wraper_header_main f">
-		<div class="container">
-			<!-- header_main -->
-			<div class="header_main">
-				<!-- brand-logo -->
-				<div class="brand-logo radiantthemes-retina ef">
-					
-				</div>
-				<!-- brand-logo -->
-				<!-- header-data -->
-			
-				<!-- header-data -->
-			</div>
-			<!-- header_main -->
-		</div>
-	</div>
+	
 	<!-- wraper_header_main -->
 	<!-- wraper_header_nav -->
 	<?php if ( true == consultix_global_var( 'header_sticky_choose', '', false ) ) { ?>
