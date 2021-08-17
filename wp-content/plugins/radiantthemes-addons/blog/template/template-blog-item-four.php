@@ -19,7 +19,7 @@ $output .= '<li>' . get_the_date( 'j F, Y' ) . '</li>';
 $output .= '<li>' . get_comments_number() . esc_html__( ' Comments', 'radiantthemes-addons' ) . '</li>';
 $output .= '</ul>';
 $output .= '<p>' . wp_trim_words( get_the_excerpt(), 20, '...' ) . '</p>';
-$output .= '<a class="btn" href="' . get_the_permalink() . '">' . esc_html__( 'Read More', 'radiantthemes-addons' ) . '</a>';
+$output .= '<a class="btn a" href="' . get_the_permalink() . '">' . esc_html__( 'Read More', 'radiantthemes-addons' ) . '</a>';
 $output .= '</div>';
 $output .= '</div>';
 $output .= '</article>';
