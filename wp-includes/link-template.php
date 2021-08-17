@@ -196,7 +196,7 @@ function get_permalink( $post = 0, $leavename = false ) {
 	}
 
 	if ( 'page' === $post->post_type ) {
-		echo 'page123';
+		
 		return get_page_link( $post, $leavename, $sample );
 	} elseif ( 'attachment' === $post->post_type ) {
 		return get_attachment_link( $post, $leavename );
