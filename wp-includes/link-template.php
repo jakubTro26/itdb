@@ -169,6 +169,7 @@ function get_the_permalink( $post = 0, $leavename = false ) {
  * @return string|false The permalink URL or false if post does not exist.
  */
 function get_permalink( $post = 0, $leavename = false ) {
+	echo 'linking';
 	$rewritecode = array(
 		'%year%',
 		'%monthnum%',
