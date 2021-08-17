@@ -81,7 +81,7 @@ if ( $my_query->have_posts() ) {
 		$output .= '<div class="data matchHeight">';
 		$output .= '<p class="category c">';
 		foreach ( $terms as $term ) {
-			var_dump( $term );
+			var_dump($terms);
 			if ( $term !== end($terms) ) {
 				
 				$output .= '<span>' . $term->name . ', ' . '</span>';
@@ -97,6 +97,7 @@ if ( $my_query->have_posts() ) {
 		    $output .= '<p>' . wp_trim_words( get_the_excerpt(), 10, '...' ) . '</p>';
 		}
 		if ( true == $shortcode['case_study_enable_link_button'] && ! empty( $shortcode['case_study_link_button_text'] ) ) {
+
 		    $output .= '<a class="btn a" href="' . get_the_permalink() . '">' . esc_html( $shortcode['case_study_link_button_text'] ) . '<i class="fa fa-angle-right"></i></a>';
 		}
 		$output .= '</div>';
