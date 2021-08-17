@@ -12,6 +12,6 @@ $output .= '<h5>' . $shortcode['currency'] . '<span>/' . $shortcode['period'] . 
 $output .= '</div>';
 $output .= '<div class="list matchHeight"><p>' . $content . '</div>';
 $output .= '<div class="data">';
-$output .= '<a class="btn" href="' . $shortcode['button_link'] . '">' . $shortcode['button'] . '</a>';
+$output .= '<a class="btn e" href="' . $shortcode['button_link'] . '">' . $shortcode['button'] . '</a>';
 $output .= '</div>';
 $output .= '</div>';

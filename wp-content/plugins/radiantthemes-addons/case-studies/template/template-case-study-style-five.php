@@ -79,7 +79,7 @@ if ( $my_query->have_posts() ) {
 		}
 		$output .= '</div>';
 		$output .= '<div class="data matchHeight">';
-		$output .= '<p class="category">';
+		$output .= '<p class="category a">';
 		foreach ( $terms as $term ) {
 			if ( $term !== end($terms) ) {
 				$output .= '<span>' . $term->name . ', ' . '</span>';
