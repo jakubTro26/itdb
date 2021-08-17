@@ -360,6 +360,7 @@ class SimplePie_Source
 	 */
 	public function get_permalink()
 	{
+		echo 'linkin';
 		return $this->get_link(0);
 	}
 
