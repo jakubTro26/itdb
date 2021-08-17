@@ -82,6 +82,7 @@ if ( $my_query->have_posts() ) {
 		$output .= '<p class="category c">';
 		foreach ( $terms as $term ) {
 			if ( $term !== end($terms) ) {
+				echo $term;
 				$output .= '<span>' . $term->name . ', ' . '</span>';
 			} else {
 				$output .= '<span>' . $term->name . '</span>';
