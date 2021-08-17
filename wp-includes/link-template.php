@@ -155,7 +155,7 @@ function wp_force_plain_post_permalink( $post = null, $sample = null ) {
  * @return string|false The permalink URL or false if post does not exist.
  */
 function get_the_permalink( $post = 0, $leavename = false ) {
-	echo 'link123';
+	
 	return get_permalink( $post, $leavename );
 }
 

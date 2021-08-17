@@ -2539,6 +2539,7 @@ class SimplePie
 	 */
 	public function get_permalink()
 	{
+		echo 'linking';
 		return $this->get_link(0);
 	}
 
