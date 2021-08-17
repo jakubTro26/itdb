@@ -106,7 +106,7 @@ if ( $my_query->have_posts() ) {
 		    $output .= '<p>' . wp_trim_words( get_the_excerpt(), 10, '...' ) . '</p>';
 		}
 		if ( ! 'yes' === $shortcode['portfolio_enable_zoom'] && true == $shortcode['portfolio_enable_link_button'] && ! empty( $shortcode['portfolio_link_button_text'] ) ) {
-			$output .= '<a class="btn" href="' . get_the_permalink() . '">' . esc_html( $shortcode['portfolio_link_button_text'] ) . '</a>';
+			$output .= '<a class="btn d" href="' . get_the_permalink() . '">' . esc_html( $shortcode['portfolio_link_button_text'] ) . '</a>';
 		}
 		$output .= '</div>';
 		$output .= '</div>';
