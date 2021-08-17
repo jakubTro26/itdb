@@ -102,7 +102,7 @@ class RevSliderFront extends RevSliderFunctions {
 		//	wp_enqueue_script('revmin-threejs', RS_PLUGIN_URL . 'public/assets/js/libs/three.min.js', $waitfor, $rs_ver, $inc_footer);
 			wp_enqueue_script('revmin-video', RS_PLUGIN_URL . 'public/assets/js/dev/rs6.video.js', $waitfor, $rs_ver, $inc_footer);
 		}else{
-			//wp_enqueue_script('revmin', RS_PLUGIN_URL . 'public/assets/js/rs6.min.js', 'tp-tools', $rs_ver, $inc_footer);
+			wp_enqueue_script('revmin', RS_PLUGIN_URL . 'public/assets/js/rs6.min.js', 'tp-tools', $rs_ver, $inc_footer);
 		}
 		
 		add_action('wp_head', array('RevSliderFront', 'add_meta_generator'));
