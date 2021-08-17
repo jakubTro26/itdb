@@ -92,7 +92,7 @@ if ( $my_query->have_posts() ) {
     		$output .= '<div class="overlay">';
             $output .= '<div class="table">';
             $output .= '<div class="table-cell">';
-    		$output .= '<a class="btn" href="' . get_the_permalink() . '"><i class="fa fa-link"></i></a>';
+    		$output .= '<a class="btn b" href="' . get_the_permalink() . '"><i class="fa fa-link"></i></a>';
     		$output .= '</div>';
     		$output .= '</div>';
     		$output .= '</div>';

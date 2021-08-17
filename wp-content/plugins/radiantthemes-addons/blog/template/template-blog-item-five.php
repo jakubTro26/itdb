@@ -19,7 +19,7 @@ $output .= '<ul class="meta">';
 $output .= '<li><i class="fa fa-user-o"></i> ' . get_the_author() . '</li>';
 $output .= '</ul>';
 $output .= '<p>' . wp_trim_words( get_the_excerpt(), 20, '...' ) . '</p>';
-$output .= '<a class="btn" href="' . get_the_permalink() . '">' . esc_html__( 'Read More', 'radiantthemes-addons' ) . '</a>';
+$output .= '<a class="btn c" href="' . get_the_permalink() . '">' . esc_html__( 'Read More', 'radiantthemes-addons' ) . '</a>';
 $output .= '</div>';
 $output .= '</div>';
 $output .= '</article>';
