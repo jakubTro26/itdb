@@ -74,7 +74,7 @@ if ( $my_query->have_posts() ) {
 		$output .= '<img src="' . plugins_url( 'radiantthemes-addons/case-studies/images/blank-image-100x70.jpg' ) . '" alt="blank image" width="100" height="70">';
 		$output .= '<div class="holder" style="background-image:url(' . get_the_post_thumbnail_url( get_the_ID(), 'full' ) . ')"></div>';
 		$output .= '<div class="data">';
-		$output .= '<p class="category">';
+		$output .= '<p class="category b">';
 		foreach ( $terms as $term ) {
 			if ( $term !== end($terms) ) {
 				$output .= '<span>' . $term->name . ', ' . '</span>';

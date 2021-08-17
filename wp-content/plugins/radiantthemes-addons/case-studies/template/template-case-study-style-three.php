@@ -71,7 +71,7 @@ if ( $my_query->have_posts() ) {
 		$output .= $case_study_item_class . '" style="padding:' . esc_attr( $spacing_value ) . 'px;">';
 		$output .= '<div class="holder">';
 		$output .= '<div class="data matchHeight">';
-		$output .= '<p class="category">';
+		$output .= '<p class="category e">';
 		foreach ( $terms as $term ) {
 			if ( $term !== end($terms) ) {
 				$output .= '<span>' . $term->name . ', ' . '</span>';

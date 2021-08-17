@@ -75,7 +75,7 @@ if ( $my_query->have_posts() ) {
 		$output .= '<div class="data">';
 		$output .= '<div class="table">';
 		$output .= '<div class="table-cell">';
-		$output .= '<p class="category">';
+		$output .= '<p class="category a">';
 		foreach ( $terms as $term ) {
 			if ( $term !== end($terms) ) {
 				$output .= '<span>' . $term->name . ', ' . '</span>';
