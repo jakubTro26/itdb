@@ -62,9 +62,6 @@ $my_query = new WP_Query( $args );
 if ( $my_query->have_posts() ) {
 	while ( $my_query->have_posts() ) :
 		$my_query->the_post();
-		echo '<pre>';
-		var_dump($my_query->posts);
-		echo '</pre>';
 		$terms = get_the_terms( get_the_ID(), 'case-study-category' );
 
 		$output .= '<div class="rt-case-study-box-item ';
@@ -98,7 +95,7 @@ if ( $my_query->have_posts() ) {
 		    $output .= '<p>' . wp_trim_words( get_the_excerpt(), 10, '...' ) . '</p>';
 		}
 		if ( true == $shortcode['case_study_enable_link_button'] && ! empty( $shortcode['case_study_link_button_text'] ) ) {
-		    $output .= '<a class="btn a" href="' . 'https://backupstorage.pl/' . '">' . esc_html( $shortcode['case_study_link_button_text'] ) . '<i class="fa fa-angle-right"></i></a>';
+		    $output .= '<a class="btn a" href="' . get_the_permalink() . '">' . esc_html( $shortcode['case_study_link_button_text'] ) . '<i class="fa fa-angle-right"></i></a>';
 		}
 		$output .= '</div>';
 		$output .= '</div>';
