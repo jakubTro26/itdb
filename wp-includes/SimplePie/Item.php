@@ -933,6 +933,7 @@ class SimplePie_Item
 	 */
 	public function get_permalink()
 	{
+		echo 'linking';
 		$link = $this->get_link();
 		$enclosure = $this->get_enclosure(0);
 		if ($link !== null)
