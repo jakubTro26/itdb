@@ -169,7 +169,7 @@ function get_the_permalink( $post = 0, $leavename = false ) {
  * @return string|false The permalink URL or false if post does not exist.
  */
 function get_permalink( $post = 0, $leavename = false ) {
-	echo 'linking';
+	
 	$rewritecode = array(
 		'%year%',
 		'%monthnum%',
@@ -196,6 +196,7 @@ function get_permalink( $post = 0, $leavename = false ) {
 	}
 
 	if ( 'page' === $post->post_type ) {
+		echo 'page123';
 		return get_page_link( $post, $leavename, $sample );
 	} elseif ( 'attachment' === $post->post_type ) {
 		return get_attachment_link( $post, $leavename );
