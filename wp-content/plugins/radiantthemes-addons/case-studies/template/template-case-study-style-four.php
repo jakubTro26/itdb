@@ -62,7 +62,9 @@ $my_query = new WP_Query( $args );
 if ( $my_query->have_posts() ) {
 	while ( $my_query->have_posts() ) :
 		$my_query->the_post();
+		echo '<pre>';
 		var_dump($my_query->posts);
+		echo '</pre>';
 		$terms = get_the_terms( get_the_ID(), 'case-study-category' );
 
 		$output .= '<div class="rt-case-study-box-item ';
