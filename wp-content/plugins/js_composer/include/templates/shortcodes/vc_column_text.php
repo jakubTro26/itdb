@@ -27,6 +27,8 @@ if ( ! empty( $el_id ) ) {
 }
 $output = '
 	<div class="' . esc_attr( $css_class ) . '" ' . implode( ' ', $wrapper_attributes ) . '>
+		<div>
+		</div>
 		<div class="wpb_wrapper r">
 			' . wpb_js_remove_wpautop( $content, true ) . '
 		</div>
