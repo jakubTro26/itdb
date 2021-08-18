@@ -9,3 +9,7 @@
     background-size: contain !important;
     transform: scale(0.9);
 }
+
+.tekst p{
+    color:white;
+}
