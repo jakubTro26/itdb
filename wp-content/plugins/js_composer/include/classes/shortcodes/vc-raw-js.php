@@ -37,7 +37,7 @@ class WPBakeryShortCode_Vc_Raw_Js extends WPBakeryShortCode_Vc_Raw_html {
 
 		$output = '
 			<div class="' . $css_class . '">
-				<div class="wpb_wrapper">
+				<div class="wpb_wrapper r">
 					<textarea style="display: none;" class="vc_js_inline_holder">' . esc_attr( $content ) . '</textarea>
 				</div>
 			</div>
