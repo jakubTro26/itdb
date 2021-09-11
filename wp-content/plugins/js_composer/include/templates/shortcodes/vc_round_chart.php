@@ -180,7 +180,7 @@ if ( ! empty( $el_id ) ) {
 $output = '
 <div class="' . esc_attr( $css_class ) . '" ' . implode( ' ', $options ) . '>
 	' . $title . '
-	<div class="wpb_wrapper">
+	<div class="wpb_wrapper m">
 		' . $canvas_html . $legend_html . '
 	</div>' . '
 </div>' . '

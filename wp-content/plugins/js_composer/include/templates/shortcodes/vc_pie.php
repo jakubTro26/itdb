@@ -65,7 +65,7 @@ if ( ! empty( $el_id ) ) {
 	$wrapper_attributes[] = 'id="' . esc_attr( $el_id ) . '"';
 }
 $output = '<div ' . implode( ' ', $wrapper_attributes ) . ' class= "' . esc_attr( $css_class ) . '" data-pie-value="' . esc_attr( $value ) . '" data-pie-label-value="' . esc_attr( $label_value ) . '" data-pie-units="' . esc_attr( $units ) . '" data-pie-color="' . esc_attr( $color ) . '">';
-$output .= '<div class="wpb_wrapper">';
+$output .= '<div class="wpb_wrapper j">';
 $output .= '<div class="vc_pie_wrapper">';
 $output .= '<span class="vc_pie_chart_back" style="border-color: ' . esc_attr( $color ) . '"></span>';
 $output .= '<span class="vc_pie_chart_value"></span>';

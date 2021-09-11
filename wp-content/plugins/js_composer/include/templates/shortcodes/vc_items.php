@@ -22,7 +22,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, $el_class, $this
 
 $output = '
 	<div class="' . esc_attr( $css_class ) . '">
-		<div class="wpb_wrapper">
+		<div class="wpb_wrapper h">
 			' . wpb_js_remove_wpautop( $content ) . '
 		</div>
 	</div>

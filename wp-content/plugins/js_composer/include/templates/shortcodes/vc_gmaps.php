@@ -51,7 +51,7 @@ $output .= wpb_widget_title( array(
 	'extraclass' => 'wpb_map_heading',
 ) );
 
-$output .= '<div class="wpb_wrapper"><div class="wpb_map_wraper">';
+$output .= '<div class="wpb_wrapper e"><div class="wpb_map_wraper">';
 if ( preg_match( '/^\<iframe/', $link ) ) {
 	$output .= $link;
 } else {

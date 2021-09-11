@@ -163,7 +163,7 @@ if ( ! empty( $el_id ) ) {
 }
 $output = '';
 $output .= '<div class="' . $css_class . '" ' . implode( ' ', $wrapper_attributes ) . '>';
-$output .= '<div class="wpb_wrapper">';
+$output .= '<div class="wpb_wrapper d">';
 $output .= wpb_widget_title( array(
 	'title' => $title,
 	'extraclass' => 'wpb_gallery_heading',

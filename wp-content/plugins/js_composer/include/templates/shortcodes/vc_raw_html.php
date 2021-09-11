@@ -34,7 +34,7 @@ if ( ! empty( $el_id ) ) {
 }
 $output = '
 	<div class="' . esc_attr( $css_class ) . '" ' . implode( ' ', $wrapper_attributes ) . '>
-		<div class="wpb_wrapper">
+		<div class="wpb_wrapper l">
 			' . $content . '
 		</div>
 	</div>

@@ -61,7 +61,7 @@ if ( 'random' === $display ) {
 // @codingStandardsIgnoreStarts
 $output = '
 	<div class="' . esc_attr( $css_class ) . '" ' . implode( ' ', $wrapper_attributes ) . '>
-		<div class="wpb_wrapper">
+		<div class="wpb_wrapper c">
 			' . wpb_widget_title( array(
 		'title' => $title,
 		'extraclass' => 'wpb_flickr_heading',

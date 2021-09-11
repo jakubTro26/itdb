@@ -68,7 +68,7 @@ $slider_width = $this->getSliderWidth( $img_size );
 
 $output = '';
 $output .= '<div' . ( ! empty( $el_id ) ? ' id="' . esc_attr( $el_id ) . '"' : '' ) . ' class="' . esc_attr( apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, $css_class, $this->settings['base'], $atts ) ) . '">';
-$output .= '<div class="wpb_wrapper">';
+$output .= '<div class="wpb_wrapper g">';
 
 $output .= wpb_widget_title( array(
 	'title' => $title,

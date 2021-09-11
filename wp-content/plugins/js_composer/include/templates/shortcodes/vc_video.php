@@ -53,7 +53,7 @@ if ( ! empty( $el_id ) ) {
 }
 $output = '
 	<div class="' . esc_attr( $css_class ) . '" ' . implode( ' ', $wrapper_attributes ) . '>
-		<div class="wpb_wrapper">
+		<div class=" o">
 			' . wpb_widget_title( array(
 	'title' => $title,
 	'extraclass' => 'wpb_video_heading',
