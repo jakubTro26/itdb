@@ -377,7 +377,7 @@ function get_the_content( $more_link_text = null, $strip_teaser = false, $post =
 		}
 	}
 
-	
+	var_dump($output);;
 
 	return $output;
 }
