@@ -91,11 +91,12 @@ $output .= '<div ' . implode( ' ', $wrapper_attributes ) . '>';
 $innerColumnClass = 'vc_column-inner ' . esc_attr( trim( vc_shortcode_custom_css_class( $css ) ) );
 $output .= '<div class="' . trim( $innerColumnClass ) . '">';
 if(strpos($output, 'vc_custom_1631783566126') !== false){
-    echo "Word Found!";
-} else{
-    echo "Word Not Found!";
+    $output .= '<div class="wpb_wrapper relacje">';
+} 
+else{
+	$output .= '<div class="wpb_wrapper">';
 }
-$output .= '<div class="wpb_wrapper b">';
+
 $output .= wpb_js_remove_wpautop( $content );
 $output .= '</div>';
 $output .= '</div>';
