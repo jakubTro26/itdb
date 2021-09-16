@@ -224,23 +224,13 @@ $wrapper_attributes = array();
 if ( ! empty( $el_id ) ) {
 	$wrapper_attributes[] = 'id="' . esc_attr( $el_id ) . '"';
 }
-
-
-if(strpos($output, 'vc_custom_1631783566126') !== false){
-    $output .= '<div class="wpb_wrapper relacje">';
-} 
-else{
-	$output .= '<div class="wpb_wrapper">';
-}
-
-
 $output = '
 	<div ' . implode( ' ', $wrapper_attributes ) . ' class="' . esc_attr( trim( $css_class ) ) . '">
 		' . wpb_widget_title( array(
 	'title' => $title,
 	'extraclass' => 'wpb_singleimage_heading',
 ) ) . '
-		<figure class="wpb_wrapper vc_figure f">
+		<figure class="wpb_wrapper vc_figure">
 			' . $html . '
 		</figure>
 	</div>
