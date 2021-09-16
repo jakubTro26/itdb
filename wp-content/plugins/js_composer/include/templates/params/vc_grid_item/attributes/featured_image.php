@@ -32,7 +32,7 @@ $wrapperClass = 'vc_single_image-wrapper ' . $style . ' ' . $border_color;
 $link = vc_gitem_create_link_real( $atts, $post, $wrapperClass, $title );
 
 $image_string = ! empty( $link ) ? '<' . $link . '>' . $img['thumbnail'] . '</a>' : '<div class="' . $wrapperClass . '">' . $img['thumbnail'] . '</div>';
-$css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'wpb_single_image wpb_content_element' . $el_class . vc_shortcode_custom_css_class( $css, ' ' ), $img_class->settings( 'base' ), $atts );
+$css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'wpb_single_image wpb_content_element k' . $el_class . vc_shortcode_custom_css_class( $css, ' ' ), $img_class->settings( 'base' ), $atts );
 $css_class .= $img_class->getCSSAnimation( $css_animation );
 
 $css_class .= ' vc_align_' . $alignment;
