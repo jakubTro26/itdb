@@ -224,6 +224,7 @@ $wrapper_attributes = array();
 if ( ! empty( $el_id ) ) {
 	$wrapper_attributes[] = 'id="' . esc_attr( $el_id ) . '"';
 }
+echo 'kuba123';
 $output = '
 	<div ' . implode( ' ', $wrapper_attributes ) . ' class="' . esc_attr( trim( $css_class ) ) . '">
 		' . wpb_widget_title( array(
