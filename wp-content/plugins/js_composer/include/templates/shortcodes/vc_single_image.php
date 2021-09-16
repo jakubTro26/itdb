@@ -224,16 +224,38 @@ $wrapper_attributes = array();
 if ( ! empty( $el_id ) ) {
 	$wrapper_attributes[] = 'id="' . esc_attr( $el_id ) . '"';
 }
+
+
+
+if(strpos($class_to_filter, 'vc_custom_1631783547282') !== false){
+    
 $output = '
-	<div ' . implode( ' ', $wrapper_attributes ) . ' class="' . esc_attr( trim( $css_class ) ) . '">
-		' . wpb_widget_title( array(
-	'title' => $title,
-	'extraclass' => 'wpb_singleimage_heading',
+<div ' . implode( ' ', $wrapper_attributes ) . ' class="' . esc_attr( trim( $css_class ) ) . '">
+	' . wpb_widget_title( array(
+'title' => $title,
+'extraclass' => 'wpb_singleimage_heading',
 ) ) . '
-		<figure class="wpb_wrapper vc_figure">
-			' . $html . '
-		</figure>
-	</div>
+	<figure class="wpb_wrapper vc_figure figure1">
+		' . $html . '
+	</figure>
+</div>
 ';
+} 
+else{
+	
+$output = '
+<div ' . implode( ' ', $wrapper_attributes ) . ' class="' . esc_attr( trim( $css_class ) ) . '">
+	' . wpb_widget_title( array(
+'title' => $title,
+'extraclass' => 'wpb_singleimage_heading',
+) ) . '
+	<figure class="wpb_wrapper vc_figure">
+		' . $html . '
+	</figure>
+</div>
+';
+}
+
+
 
 return $output;
