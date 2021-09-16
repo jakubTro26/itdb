@@ -205,7 +205,7 @@ $class_to_filter = 'wpb_single_image  wpb_content_element vc_align_' . $alignmen
 $class_to_filter .= vc_shortcode_custom_css_class( $css, ' ' ) . $this->getExtraClass( $el_class );
 $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, $class_to_filter, $this->settings['base'], $atts );
 
-var_dump($css_class);
+
 
 if ( in_array( $source, array( 'media_library', 'featured_image' ), true ) && 'yes' === $add_caption ) {
 	$img_id = apply_filters( 'wpml_object_id', $img_id, 'attachment' );
@@ -230,7 +230,7 @@ $output = '
 	'title' => $title,
 	'extraclass' => 'wpb_singleimage_heading',
 ) ) . '
-		<figure class="wpb_wrapper vc_figure">
+		<figure class="wpb_wrapper vc_figure f">
 			' . $html . '
 		</figure>
 	</div>
