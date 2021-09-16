@@ -90,6 +90,7 @@ if ( ! empty( $el_id ) ) {
 $output .= '<div ' . implode( ' ', $wrapper_attributes ) . '>';
 $innerColumnClass = 'vc_column-inner ' . esc_attr( trim( vc_shortcode_custom_css_class( $css ) ) );
 $output .= '<div class="' . trim( $innerColumnClass ) . '">';
+var_dump($innerColumnClass);
 $output .= '<div class="wpb_wrapper b">';
 $output .= wpb_js_remove_wpautop( $content );
 $output .= '</div>';
