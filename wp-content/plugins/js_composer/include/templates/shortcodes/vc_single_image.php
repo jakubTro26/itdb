@@ -226,22 +226,15 @@ if ( ! empty( $el_id ) ) {
 }
 
 
-if(strpos($css_class, 'vc_custom_1631783547282') !== false){
-	$output = '
-	<div ' . implode( ' ', $wrapper_attributes ) . ' class="' . esc_attr( trim( $css_class ) ) . '">
-		' . wpb_widget_title( array(
-	'title' => $title,
-	'extraclass' => 'wpb_singleimage_heading',
-) ) . '
-		<figure class="wpb_wrapper vc_figure figure1">
-			' . $html . '
-		</figure>
-	</div>
-';
-
+if(strpos($output, 'vc_custom_1631783566126') !== false){
+    $output .= '<div class="wpb_wrapper relacje">';
 } 
 else{
-	$output = '
+	$output .= '<div class="wpb_wrapper">';
+}
+
+
+$output = '
 	<div ' . implode( ' ', $wrapper_attributes ) . ' class="' . esc_attr( trim( $css_class ) ) . '">
 		' . wpb_widget_title( array(
 	'title' => $title,
@@ -252,9 +245,5 @@ else{
 		</figure>
 	</div>
 ';
-
-}
-
-
 
 return $output;
