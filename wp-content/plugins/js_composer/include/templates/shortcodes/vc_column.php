@@ -96,7 +96,7 @@ if(strpos($innerColumnClass, 'vc_custom_1631783566126') !== false){
 	$output .= '<div class="' . trim( $innerColumnClass ) . '">';
 } 
 else{
-	
+	$output .= '<div class="' . trim( $innerColumnClass ) . '">';
 }
 
 
