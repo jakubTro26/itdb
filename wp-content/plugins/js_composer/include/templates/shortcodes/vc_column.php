@@ -89,6 +89,7 @@ if ( ! empty( $el_id ) ) {
 	$wrapper_attributes[] = 'id="' . esc_attr( $el_id ) . '"';
 }
 $output .= '<div ' . implode( ' ', $wrapper_attributes ) . '>';
+var_dump($wrapper_attributes);
 $innerColumnClass = 'vc_column-inner ' . esc_attr( trim( vc_shortcode_custom_css_class( $css ) ) );
 $output .= '<div class="' . trim( $innerColumnClass ) . '">';
 if(strpos($output, 'vc_custom_1631783566126') !== false){
