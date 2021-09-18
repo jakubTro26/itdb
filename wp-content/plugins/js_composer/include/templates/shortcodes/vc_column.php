@@ -96,6 +96,7 @@ if(strpos($innerColumnClass, 'vc_custom_1519806957265') !== false){
 } 
 else{
 	$innerColumnClass = 'vc_column-inner ' . esc_attr( trim( vc_shortcode_custom_css_class( $css ) ) );
+	$innerColumnClass.="style=\"\";";
 }
 //k
 $output .= '<div class="' . trim( $innerColumnClass ) . '">';
