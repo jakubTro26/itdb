@@ -95,7 +95,7 @@ $innerColumnClass = 'vc_column-inner ' . esc_attr( trim( vc_shortcode_custom_css
 
 $output .= '<div class="' . trim( $innerColumnClass ) . '">';
 if(strpos($output, 'vc_custom_1631783566126') !== false){
-    $output .= '<div class="' . trim( $innerColumnClass ) . '" style="padding-bottom:0px !important;">';
+    $output .= '<div class="' . trim( $innerColumnClass ) . '" '.'style=padding-bottom:0px !important;'. '>';
 } 
 else{
 	
