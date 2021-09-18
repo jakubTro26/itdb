@@ -26,6 +26,7 @@ $width = vc_column_offset_class_merge( $offset, $width );
 $css_classes = array(
 	$this->getExtraClass( $el_class ),
 	'wpb_column',
+	'a',
 	'vc_column_container',
 	$width,
 );

@@ -29,6 +29,7 @@ $width = vc_column_offset_class_merge( $offset, $width );
 $css_classes = array(
 	$this->getExtraClass( $el_class ) . $this->getCSSAnimation( $css_animation ),
 	'wpb_column',
+	'b',
 	'vc_column_container',
 	$width,
 );
