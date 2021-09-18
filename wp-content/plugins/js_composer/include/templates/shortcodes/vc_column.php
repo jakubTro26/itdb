@@ -92,14 +92,14 @@ $output .= '<div ' . implode( ' ', $wrapper_attributes ) . '>';
 
 $innerColumnClass = 'vc_column-inner ' . esc_attr( trim( vc_shortcode_custom_css_class( $css ) ) );
 
-
-$output .= '<div class="' . trim( $innerColumnClass ) . '">';
-// if(strpos($output, 'vc_custom_1631783566126') !== false){
-//     $output .= '<div class="' . trim( $innerColumnClass ) . '" '.''. '>';
-// } 
-// else{
+if(strpos($innerColumnClass, 'vc_custom_1631783566126') !== false){
+    echo 'tak';
+} 
+else{
 	
-// }
+}
+$output .= '<div class="' . trim( $innerColumnClass ) . '">';
+
 
 if(strpos($output, 'vc_custom_1631783566126') !== false){
     $output .= '<div class="wpb_wrapper relacje">';
