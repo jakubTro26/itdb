@@ -92,7 +92,7 @@ $output .= '<div ' . implode( ' ', $wrapper_attributes ) . '>';
 
 $innerColumnClass = 'vc_column-inner ' . esc_attr( trim( vc_shortcode_custom_css_class( $css ) ) );
 if(strpos($innerColumnClass, 'vc_custom_1519806957265') !== false){
-    $innerColumnClass = 'vc_column-inner ' . esc_attr( trim( vc_shortcode_custom_css_class( $css ) ) ) . '"'.  ' style="padding-bottom:0px important;"';
+    $innerColumnClass = 'vc_column-inner ' . esc_attr( trim( vc_shortcode_custom_css_class( $css ) ) ) . '"'.  " style=\"padding-bottom:0px important;\"";
 } 
 else{
 	$innerColumnClass = 'vc_column-inner ' . esc_attr( trim( vc_shortcode_custom_css_class( $css ) ) );
