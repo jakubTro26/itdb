@@ -97,7 +97,7 @@ if(strpos($innerColumnClass, 'vc_custom_1519806957265') !== false){
 else{
 	$innerColumnClass = 'vc_column-inner ' . esc_attr( trim( vc_shortcode_custom_css_class( $css ) ) );
 }
-
+//k
 $output .= '<div class="' . trim( $innerColumnClass ) . '">';
 if(strpos($output, 'vc_custom_1631783566126') !== false){
     $output .= '<div class="wpb_wrapper relacje">';
